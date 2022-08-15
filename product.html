@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+</head>
+<style>
+    input{
+        width: 500px;
+        height: 50px;
+        font-size: 1.3rem;
+        background-color: bisque;
+        color: brown;
+    }
+    #result{
+        color: rgb(235, 146, 14);   
+        margin-left: 200px;
+    }
+</style>
+<body>
+    <input id="click" type="button" value="CHỌN XEM CÓ NÊN ĐI CHƠI NÉT HAY KHÔNG" onclick="click()" >
+    <h1 id="result"></h1>
+</body>
+<script>
+    var arr = ["ĐI NÉT","KHÔNG ĐI NÉT"];
+    var result = $("#result");
+  $("#click").click(function (e) { 
+      e.preventDefault;
+      var x = Math.floor((Math.random()*2)+1);
+        if(x == 1)
+        {
+            result.html(arr[0]);
+        }
+        else
+        {
+            result.html(arr[1]);
+        }
+
+    });
+ </script>
+</html>

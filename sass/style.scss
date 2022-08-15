@@ -1,0 +1,1253 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Great+Vibes&family=Lobster&family=Noto+Serif+Display:ital,wght@0,200;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+$font: 'Dancing Script', cursive;
+$font-product :'Playfair Display', serif;
+$font-text : 'Barlow Condensed', sans-serif;
+$font_logo : 'Great Vibes', cursive; 
+$color-text : rgb(20, 20, 20);
+$color-title :rgba(19, 17, 15, 0.575) ;
+$header-width : 1200px;
+$small-height-img : 500px;
+$height-top : 840px;
+$height-service : 640px;
+$height-img-banner1 : 700px;
+$height-small-slideshow : 440px;
+$font-size-big-title : 3.5rem;
+$font-size-small-title : 2.5rem;
+$font-size-text : 2rem;
+$color-navigation : rgba(242, 212, 161, 0.354);
+$background-color : rgba(218, 178, 138, 0.44);
+body{
+    margin: 0% auto;
+    padding: 0%;
+}
+.header{
+    height: $height-top;  
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    .logo{
+        position: absolute;
+        height: auto;
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        color:rgba(19, 17, 15, 0.575) ;
+        text-align: center;
+        flex-direction: column;
+        a{  
+            font-family: $font_logo;           
+            font-size: 2rem;
+            font-weight: bold;
+            width: 100%;
+            top: 2%;
+        }
+    }
+   
+    .links{
+        position: absolute;
+        padding: 0%;
+        margin: 0%;
+        width: 46%;
+        height: auto;
+        float: right;
+        right: 0.6%; 
+        #menushow{
+            display: none;
+        }
+        #menuhide{
+            display: none;
+        }
+        ul{
+            margin-top: 20%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;    
+            margin: 0px;
+            padding: 0px;
+           
+            li{
+                position: relative;
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color:rgba(19, 17, 15, 0.575) ;
+                    font-family:  $font-product;
+                    font-weight: 900;
+                }
+                :hover{
+                    color: rgb(246, 241, 242);
+                }
+                ::after{
+                content: " ";
+                position: absolute;
+                width: 0%;
+                bottom:0%;
+                border-bottom: 2px solid rgb(245, 231, 218);
+                left: 0%;
+                transition: 0.5s;
+                }
+                :hover::after{
+                width: 100%;
+                }
+            }
+        }
+    }
+    .click-button{
+        position: absolute;
+        width: 40%;
+        height: 30%;
+        top: 35%;
+        left: 30%;
+        position: relative;
+        button{
+            width: 50%;
+            height: 40%;
+            position: relative;
+            top: 30%;
+            left: 25%;
+            border: none;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgba(15, 14, 14, 0.294);
+            color: rgba(251, 251, 251, 0.993);
+            font-size: 1.9rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            color:rgb(248, 242, 242);
+            transform: scale(1.1);
+            transition: 0.5s;
+            border: 1px solid black;
+            
+        }
+        ::before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background-color: rgb(246, 218, 231);
+            top: 0%;
+            left: 0%;
+            transition: 0.5s;
+            opacity: 0.4;
+
+        }
+        ::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background-color: rgb(250, 249, 249);
+            top: 0%;
+            right: 0%;
+            opacity: 0.4;
+            transition: 0.5s;
+        }
+        :hover::before{
+            width: 50%;
+            opacity: 0.3;
+        }
+        :hover::after{
+            width: 50%;
+            opacity: 0.3;
+
+        }
+    }
+     .sliders{
+        width: 100%;
+        img
+        {
+            width: 100%;
+        }
+    }
+    .list-slide{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        padding: 0px;
+        margin: 0px;
+        img{
+            object-fit:cover;
+            width: 100%;
+            height: $height-top;
+        }
+        .slick-prev::before{
+            font-size: $font-size-big-title;
+        }
+        .slick-prev{
+            position: absolute;
+            z-index: 1;
+            left: 0.7%;
+            padding: 0px;
+        }
+        .slick-next::before{
+            font-size: $font-size-big-title;
+        }
+        .slick-next{
+            position: absolute;
+            z-index: 1;
+            right: 3.5%;
+            padding: 0px;
+        }
+        .slick-dots
+        {   
+            bottom: 1%;
+            padding: 0%;
+                li{
+                    width:auto;
+                    height: auto;
+                    margin: 0% 2% 0% 0%;
+                    button::before{
+                        font-size: 2rem;
+                        color: $color-text;
+                    }
+                }
+          
+        }
+        
+    }    
+
+}
+.slogan{
+    width: 100%;
+    height: auto;
+    clear: both;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    h1{
+        width: 100%;
+        margin-top: 1%;
+        font-size: $font-size-big-title;
+        font-weight: bold;
+        text-align: center;
+        color:rgba(19, 17, 15, 0.575) ;
+        font-family: $font_logo;
+
+    }
+    p{
+        width: 70%;
+        margin-top: 2%;
+        margin-left: 15%;
+        text-align: center;
+        font-family:  'Barlow Condensed', sans-serif;
+        color:rgba(19, 17, 15, 0.575) ;
+        font-size: $font-size-text;
+        font-weight: 400;
+        border-radius: 20pxs;
+        font-style: italic;
+    }
+}
+.service
+{
+padding: 0px;
+ .show-images{
+    .demo-img-first{
+        height: $height-service;
+        padding: 0px;
+        img{
+            border-left: 1px solid white;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+        }
+        button{
+            position: absolute;
+            width: 50%;
+            height: 10%;
+            top: 25%;
+            left: 25%;
+            font-size: 1.4rem;
+            color: $color-text ;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgb(248, 233, 242,0.7);
+            border: none;
+            text-align: center;
+            font-weight: 500;
+        }       
+    }
+}
+}
+.products{
+    padding: 0px;
+    .catagory{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+        a{
+            color:rgba(19, 17, 15, 0.575) ;
+            font-size: $font-size-big-title;
+            font-family: $font_logo;
+            height: 10%;          
+        }
+        a:hover{
+            background-color: antiquewhite;
+            text-decoration: none;        
+        }
+    }
+    .banner-order{
+        margin-top: 1%;
+        height: $height-img-banner1;
+        .left-img{
+            width: 95%;
+            height: 100%;
+           img{
+            width: 100%;
+            height: 100%;
+        } 
+        }
+        h2{
+            width: 100%;
+            height: 30%;
+            font-size: $font-size-big-title;
+            text-align: center;
+            margin-top:8%;
+            font-family: $font-product;
+            color: $color-title;
+        }
+        p{
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            margin-top: 4%;
+            padding: 0px;
+            font-size:$font-size-text ;
+            color:rgba(19, 17, 15, 0.575) ;
+            font-family: $font-text;
+        }
+        button:hover{
+            transform: scale(1.2);
+            transition: 1s;
+        }
+        button{
+            width: 50%;
+            height: 10%;
+            margin-left: 25%;
+            background-color: rgba(8, 8, 8, 0.206);            ;
+            border: 0.2px solid rgba(139, 132, 132, 0.51);
+            font-family: $font-text;
+            color: $color-text;
+            font-weight: 400;
+            font-size: larger;
+        }
+
+    }
+    .list-products{
+        width: 100%;
+        h2{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: $font-size-big-title;
+        text-align: center;
+        color:rgba(19, 17, 15, 0.575) ;
+        font-family: $font_logo;
+        }
+        .show-wedding-style{
+            top: 1%;
+            width: auto;
+            padding: 0%;
+
+            .style{    
+                margin: 0%;
+                padding: 0%;
+                width: 100%;
+                img{
+                height: $small-height-img; 
+                width: auto;
+                object-fit: cover;
+                border: 1px solid rgba(255, 255, 255, 0.846);
+                }
+            }    
+        }
+        .slick-next{
+         z-index: 1;  
+         right: 1.5%;
+        }
+        .slick-prev{
+        z-index: 1;
+        left: 0%;
+        }
+        .slick-prev:before {
+            color: antiquewhite;
+            font-size: $font-size-small-title;
+            display: none;
+        }
+        .slick-next:before {
+            color: antiquewhite;
+            font-size: $font-size-small-title;
+            display: none;
+        }
+        .show-wedding-dress{
+            
+            .list-wedding-dress{
+                width: 100%;
+                height: auto;
+                padding: 0%;
+                margin: 0%;
+                position: relative;
+                .dress::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 0%;
+                   
+                    background-color: rgba(0, 0, 0, 0.195);
+                    transition: 1s;
+                }
+                .dress:hover{
+                    transition: 1s;
+                    
+                }
+                .dress:hover::before{
+                    height: 100%;
+                    width: 100%;
+                }
+                
+                .dress{
+                    width: 100%;
+                    margin-bottom: 5%;
+                    padding: 0%;
+                    height: auto;
+                    position: relative;
+                    border-right: 1rem solid white;
+                .dress:last-child{
+                    border: none ;
+                }
+                    img{
+                        width: 100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                    .price{
+                        width: 100%;
+                        height: 10%;
+                       p{
+                        text-align: center;
+                        font-size: larger;
+                        color: rgb(83, 81, 81);
+                        height: 100%;
+                        width: 100%;
+                        }             
+                    }
+                   button{
+                        position: absolute;
+                        width: 30%;
+                        font-size: smaller;
+                        left: 35%;
+                        height: 6%;
+                        bottom: 0%;
+                        border: none;
+                        visibility: hidden;
+                    }
+                    .button-animated {
+                      bottom: 20%;
+                      transition: 1s;
+                      transition-duration: 1s;
+                      transition-property: initial;
+                      visibility: visible;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.search{
+    background-image: linear-gradient( rgba(248, 228, 228, 0.2),rgba(219, 205, 213, 0.4)), url('../img/s1.jpg');
+    height:150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .icon-search{
+        width: auto;
+        height: auto;
+        position: absolute;
+        wi
+        #search-service-price{
+            width: 30%;
+            height: 40%;
+            top: 30%;
+            left: 35%;
+        }
+    }
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    $font-link : 0.6rem;
+    $font-size-logo :0.7rem;
+    $font-title-slogan : 0.8rem;
+    $font-text-slogan : 0.6rem;
+    $font-title-service : 0.6rem;
+    $height-img-header : 480;
+    $height-img-service : 370;
+    .header{
+        width: 100%;
+        height:$height-top - $height-img-header;  
+        position: relative;
+        .click-button{
+            button{
+                width: 50%;
+                height: 40%;
+                position: relative;
+                top: 30%;
+                left: 25%;
+                border: none;
+                font-family:  'Barlow Condensed', sans-serif;
+                background-color: rgba(15, 14, 14, 0.294);
+                color: rgba(251, 251, 251, 0.993);
+                font-size: 0.7rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+         .logo
+         {
+        a:first-child{
+            font-size: $font-size-logo;
+        }
+        a{  
+            font-family: $font_logo;           
+            font-size: $font-text-slogan;
+            font-weight: bold;
+            width: 100%;
+            top: 2%;
+        }
+        }
+        .slides
+        {
+            .slide{
+                img{
+                    object-fit: cover;
+                    max-width: auto;
+                    height:$height-top - $height-img-header;  
+                }
+            }
+            
+        }  
+        .links
+        {        
+            width: 30%;
+            right: 0%;
+            height: 100%;
+            background-color: rgba(8, 7, 7, 0.483);
+
+            #menushow{
+                margin-left: 80%;
+                color: aliceblue;
+                font-size: 1rem;
+                width: 15%;
+                cursor: pointer;
+                display: none;
+            }
+            #menuhide{
+                margin-left: 80%;
+                color: aliceblue;
+                font-size: 1rem;
+                width: 15%;
+                display: block;
+                cursor: pointer;
+            }
+                ul{
+                    flex-flow:column;
+                    li{
+                        width: 100%;
+                        text-align: center;
+                        height:15%;
+                        a{
+                            font-size: $font-link;
+                           
+                        }
+                    }
+                }
+        }
+        .list-slide
+        {
+            .slick-prev:before{
+            display: none;
+            }
+            .slick-next:before{
+            display: none;
+            }
+            .slick-dots
+        {   
+            bottom: 1%;
+            padding: 0%;
+                li{
+                    width:auto;
+                    height: auto;
+                    margin: 0% 2% 0% 0%;
+                    button::before{
+                        font-size: 1rem;
+                        color: rgb(253, 253, 253);
+                    }
+                }
+          
+        }
+        } 
+    }
+    .slogan{
+        h1{
+            font-size:$font-title-slogan;
+        }
+        p{
+            font-size: $font-text-slogan;
+        }
+    }
+    .service
+    {
+    padding: 0px;
+  
+    .show-images{
+        .demo-img-first{
+            height: $height-service - $height-img-service; 
+            width: 60%;
+            margin-left: 20%;
+            margin-bottom: 1%;
+            button{            
+            font-size: 0.6rem;
+            color: $color-text ;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgb(248, 233, 242,0.7);
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            }
+        }
+    }
+    }
+    .products{
+        .catagory{
+            a{
+                font-size: 0.9rem ;
+                font-family: $font_logo;
+            }
+        }
+        .banner-order{
+            height: $height-img-banner1 - 520;
+            h2{
+             
+                font-size: $font-title-slogan;
+                font-family: $font-product;
+                color: $color-title;
+            }
+            p{
+                font-size:$font-text-slogan ;
+                color: $color-text;
+                font-family: $font-text;
+            }
+            button{
+                font-size: $font-text-slogan;
+
+            }
+        }
+        .list-products{
+            h2{
+            font-size: $font-title-slogan;
+            font-family: $font;
+            }
+            .show-wedding-style{
+                .style{      
+                    img{
+                    height: $small-height-img - $height-img-service; 
+                    }
+                }    
+            }
+            .show-wedding-dress{
+            
+                .list-wedding-dress{
+                    .dress{
+                        width: 100%;
+                        margin-bottom: 13%;
+                  }
+                }
+            }
+        }
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    $font-link : 0.7rem;
+    $font-size-logo :1rem;
+    $font-title-slogan : 1rem;
+    $font-text-slogan : 0.7rem;
+    $font-title-service : 0.7rem;
+    $height-img-header : 480;
+    $height-img-service : 400;
+    .header{
+        width: 100%;
+        height:$height-top - $height-img-header;  
+        position: relative;
+        .click-button{
+            button{
+                width: 50%;
+                height: 40%;
+                position: relative;
+                top: 30%;
+                left: 25%;
+                border: none;
+                font-family:  'Barlow Condensed', sans-serif;
+                background-color: rgba(15, 14, 14, 0.294);
+                color: rgba(251, 251, 251, 0.993);
+                font-size: $font-title-slogan;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+         .logo
+         {
+        a:first-child{
+            font-size:$font-size-logo;
+        }
+        a{  
+            font-family: $font-size-logo;           
+            font-size: $font-text-slogan;
+            font-weight: bold;
+            width: 100%;
+            top: 2%;
+        }
+        }
+        .slides
+        {
+            .slide{
+                img{
+                    object-fit: cover;
+                    max-width: auto;
+                    height:$height-top - $height-img-header;  
+                }
+            }
+            
+        }  
+        .links
+        {        
+                ul{
+                    li{
+                        a{
+                            font-size: $font-link;
+                        }
+                    }
+                }
+        }
+        .list-slide
+        {
+            .slick-prev:before{
+            display: none;
+            }
+            .slick-next:before{
+            display: none;
+            }
+            
+        } 
+    }
+    .slogan{
+        h1{
+            font-size:$font-title-slogan;
+        }
+        p{
+            font-size: $font-text-slogan;
+        }
+    }
+    .service
+    {
+    padding: 0px;
+  
+    .show-images{
+        .demo-img-first{
+            width: 25%;
+            height: $height-service - $height-img-service; 
+            button{            
+            font-size: 0.6rem;
+            color: $color-text ;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgb(248, 233, 242,0.7);
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            }
+        }
+    }
+    }
+    .products{
+        .catagory{
+           
+            a{
+                font-size: $font-title-slogan;
+                font-family: $font_logo;
+            }
+        }
+        .banner-order{
+            height: $height-img-banner1 - $height-img-service;
+            h2{
+             
+                font-size: $font-title-slogan;
+                font-family: $font-product;
+                color: $color-title;
+            }
+            p{
+                font-size:$font-text-slogan ;
+                color: $color-text;
+                font-family: $font-text;
+            }
+            button{
+                font-size: $font-title-slogan;
+
+            }
+        }
+        .list-products{
+            h2{
+            font-size: $font-title-slogan;
+            font-family: $font;
+            }
+            .show-wedding-style{
+                .style{      
+                    img{
+                    height: $small-height-img - $height-img-service; 
+                    }
+                }    
+            }
+            .show-wedding-dress{
+                .row{
+                    .dress{
+                        height: $height-service - $height-img-service; 
+                        margin-bottom: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    $font-link : 0.8rem;
+    $font-size-logo :2rem;
+    $font-title-slogan : 1.8rem;
+    $font-text-slogan : 1.2rem;
+    $font-title-service : 0.9rem;
+    $height-img-header : 340;
+    $height-img-service : 300;
+    .header{
+        width: 100%;
+        height:$height-top - $height-img-header;  
+        position: relative;
+         .logo{
+        a:first-child{
+            font-size: $font-size-logo;
+        }
+        a{  
+            font-family: $font_logo;           
+            font-size: $font-text-slogan;
+            font-weight: bold;
+            width: 100%;
+            top: 2%;
+        }
+    }
+        .slides
+        {
+            .slide{
+                img{
+                    object-fit: cover;
+                    max-width: auto;
+                    height:$height-top - $height-img-header;  
+                }
+            }
+            
+        }  
+        .links
+        {      
+            #menuhide{
+                display: none;
+            }   
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-size: $font-link;
+                        }
+                    }
+                }
+        }
+        .list-slide{
+            .slick-prev:before{
+            display: none;
+            }
+            .slick-next:before{
+            display: none;
+            }
+            
+        } 
+    }
+    .slogan{
+        h1{
+            font-size:$font-title-slogan;
+        }
+        p{
+            font-size: $font-text-slogan;
+        }
+    }
+    .service
+    {
+    padding: 0px;
+    .show-images{
+        .demo-img-first{
+            height: $height-service - $height-img-service;            
+            button{            
+            font-size: $font-title-service;
+            color: $color-text ;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgb(248, 233, 242,0.7);
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            }
+        }
+    }
+    }
+    .products{
+        .catagory{
+           
+            a{
+                font-size: $font-title-slogan;
+                font-family: $font_logo;
+            }
+        }
+        .banner-order{
+            height: $height-img-banner1 - $height-img-service;
+            h2{
+             
+                font-size: $font-title-slogan;
+                font-family: $font-product;
+                color: $color-title;
+            }
+            p{
+                font-size:$font-text-slogan ;
+                color: $color-text;
+                font-family: $font-text;
+            }
+            button{
+                font-family: $font-text;
+            }
+        }
+        .list-products{
+            h2{
+            font-size: $font-title-slogan;
+            font-family: $font;
+            }
+            .show-wedding-style{
+                .style{      
+                    img{
+                    height: $small-height-img - $height-img-service; 
+                    }
+                }    
+                
+            }
+            // .slick-prev:before {
+            //         display: none;
+            //     }
+            //     .slick-next:before {
+            //         display: none;
+            //     }
+            .show-wedding-dress{
+                .row{
+                    .dress{
+                        height: $height-service - $height-img-service; 
+                        margin-bottom: 4%;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    $font-link : 1.2rem;
+    $font-title-slogan : 2.5rem;
+    $font-text-slogan : 1.5rem;
+    $font-title-service : 1.1rem;
+    $height-img-header : 220;
+    $height-img-service : 180;
+    .header{
+        width: 100%;
+        height:$height-top - $height-img-header;  
+        position: relative;
+        .slides
+        {
+            .slide{
+                img{
+                    object-fit: cover;
+                    max-width: auto;
+                    height:$height-top - $height-img-header;  
+                }
+            }
+            
+        }  
+        .links
+        {        
+            #menuhide{
+                display: none;
+            }
+                ul{
+                    li{
+                        margin: auto;
+                        a{
+                            font-size: $font-link;
+                            
+                        }
+                    }
+                }
+        }
+        .list-slide{
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            top: 0%;
+            padding: 0px;
+            margin: 0px;
+            img{
+                object-fit:cover;
+                width: 100%;
+                height: $height-top;
+            }
+            .slick-prev::before{
+                font-size: $font-size-big-title;
+            }
+            .slick-prev{
+                position: absolute;
+                z-index: 1;
+                left: 0.7%;
+                padding: 0px;
+            }
+            .slick-next::before{
+                font-size: $font-size-big-title;
+            }
+            .slick-next{
+                position: absolute;
+                z-index: 1;
+                right: 3.5%;
+                padding: 0px;
+            }
+            
+        } 
+    }
+    .slogan{
+        h1{
+            font-size:$font-title-slogan;
+        }
+        p{
+            font-size: $font-text-slogan;
+        }
+    }
+    .service
+    {
+    padding: 0px;
+    .show-images{
+        .demo-img-first{
+            height: $height-service - $height-img-service; 
+            button{            
+            font-size: $font-title-service;
+            color: $color-text ;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgb(248, 233, 242,0.7);
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            }
+        }
+    }
+    }
+    .products{
+        .catagory{
+           
+            a{
+                font-size: $font-title-slogan;
+                font-family: $font_logo;
+            }
+        }
+        .banner-order{
+            height: $height-img-banner1 - $height-img-service;
+            h2{
+             
+                font-size: $font-title-slogan;
+                font-family: $font-product;
+                color: $color-title;
+            }
+            p{
+                font-size:$font-text-slogan ;
+                color: $color-text;
+                font-family: $font-text;
+            }
+            button{
+                font-family: $font-text;
+            }
+        }
+        .list-products{
+            h2{
+            font-size: $font-size-big-title;
+            font-family: $font-title-slogan;
+            }
+            .show-wedding-style{
+                .style{      
+                    img{
+                    height: $small-height-img - $height-img-service; 
+                    }
+                }    
+            }
+            .show-wedding-dress{
+                .row{
+                    .dress{
+                        height: $height-service - $height-img-service; 
+                    }
+                }
+            }
+        }
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+    $font-link : 2rem;
+    $font-title-slogan : 3.5rem;
+    $font-text-slogan : 2.5rem;
+    $font-title-service : 2rem;
+    $height-img-header : -70;
+    $height-img-service : 0;
+    .header{
+        width: 100%;
+        height:$height-top - $height-img-header;  
+        position: relative;
+        .logo{
+            a{
+                font-size: 2.2rem;
+            }
+        }
+        .slides
+        {
+            .slide{
+                img{
+                    object-fit: cover;
+                    max-width: auto;
+                    height:$height-top - $height-img-header;  
+                }
+            }
+            
+        }  
+        .click-button{
+            button{
+                font-size: $font-text-slogan;
+            }
+          
+        }
+    }
+    .slogan{
+        h1{
+            font-size:$font-title-slogan;
+        }
+        p{
+            font-size: $font-text-slogan;
+        }
+    }
+    .service
+    {
+    padding: 0px;
+    .show-images{
+        .demo-img-first{
+            height: $height-service - $height-img-service; 
+            button{            
+            font-size: $font-title-service;
+            color: $color-text ;
+            font-family:  'Barlow Condensed', sans-serif;
+            background-color: rgb(248, 233, 242,0.7);
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            }
+        }
+    }
+    }
+    .products{
+        .catagory{
+           
+            a{
+                font-size: $font-title-slogan;
+                font-family: $font_logo;
+            }
+        }
+        .banner-order{
+            height: $height-img-banner1 - $height-img-service;
+            h2{
+             
+                font-size: $font-title-slogan;
+                font-family: $font-product;
+                color: $color-title;
+            }
+            p{
+                font-size:$font-text-slogan ;
+                color: $color-text;
+                font-family: $font-text;
+            }
+            button{
+                font-family: $font-text;
+            }
+        }
+        .list-products{
+            h2{
+            font-size: $font-size-big-title;
+            font-family: $font-title-slogan;
+            }
+            .show-wedding-style{
+                .style{      
+                    img{
+                    height: $small-height-img - $height-img-service; 
+                    }
+                }    
+            }
+            .show-wedding-dress{
+                .row{
+                    .dress{
+                        height: $height-service - $height-img-service; 
+                    }
+                }
+                .slick-dots
+                {   
+                        li{
+                            button::before{
+                                font-size: 2rem;
+                                color: rgb(92, 89, 89);
+                            }
+                        }
+                  
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .products{
+        .slick-prev:before {
+            display: none;               
+             }
+        .slick-next:before {
+            display: none;                              
+            }
+        .slick-dots
+        {   
+                li{
+                    button::before{
+                        font-size: 1rem;
+                        color: rgb(92, 89, 89);
+                    }
+                }
+          
+        }
+    }
+}
