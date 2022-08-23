@@ -178,24 +178,6 @@ body{
             width: 100%;
             height: $height-top;
         }
-        .slick-prev::before{
-            font-size: $font-size-big-title;
-        }
-        .slick-prev{
-            position: absolute;
-            z-index: 1;
-            left: 0.7%;
-            padding: 0px;
-        }
-        .slick-next::before{
-            font-size: $font-size-big-title;
-        }
-        .slick-next{
-            position: absolute;
-            z-index: 1;
-            right: 3.5%;
-            padding: 0px;
-        }
         .slick-dots
         {   
             bottom: 1%;
@@ -459,31 +441,84 @@ padding: 0px;
         
     }
 }
-.search{
-    background-image: linear-gradient( rgba(248, 228, 228, 0.2),rgba(219, 205, 213, 0.4)), url('../img/s1.jpg');
-    height:150px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    .icon-search{
-        width: auto;
-        height: auto;
-        position: absolute;
-        wi
-        #search-service-price{
-            width: 30%;
-            height: 40%;
-            top: 30%;
-            left: 35%;
+.album{
+width: 100%;
+height: auto;
+padding: 0%;
+position: relative;
+.content-album{
+        padding: 0%;
+        h1{
+            font-size: $font-size-big-title;
+            width: 100%;
+            text-align: center;
+            font-family: $font_logo;
+        }
+    } 
+    .list-album{
+            width: 100%;
+            height: auto;
+            padding: 0%;
+            position: relative;
+        .img-album{
+            width: 100%;
+            padding: 0%;
+            img{
+                width: 100%;
+                height: 500px;
+                padding: 0%;
+            }
         }
     }
-    
+    .slick-list{
+        width: 100%;
+        padding: 0%;
+        
+    }
+      .slick-prev::before{
+            font-size: $font-size-big-title;
+            color: rebeccapurple;
+        }
+        .slick-prev{
+            z-index: 1;
+            position: absolute;     
+        }
+        .slick-next::before{
+            font-size: $font-size-big-title;
+            color: rebeccapurple;
+            
+        }
+        .slick-next{
+            z-index: 1;
+            position: absolute;
+
+        }
+}
+footer{
+    width: 100%;
+    height: 400px;
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    .img-footer{
+        z-index: 0;
+        width: 100%;
+        height:100%;            
+        padding: 0%;
+        opacity: 90%;
+        img{
+            position: absolute;
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+   
 }
 
-
-
-
+.row{
+    margin: 0%;
+}
 
 @media only screen and (max-width: 600px) {
     $font-link : 0.6rem;

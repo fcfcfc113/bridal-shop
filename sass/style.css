@@ -65,14 +65,14 @@ body {
   font-weight: 900;
 }
 .header .links ul li :hover {
-  color: rgb(246, 241, 242);
+  color: #f6f1f2;
 }
 .header .links ul li ::after {
   content: " ";
   position: absolute;
   width: 0%;
   bottom: 0%;
-  border-bottom: 2px solid rgb(245, 231, 218);
+  border-bottom: 2px solid #f5e7da;
   left: 0%;
   transition: 0.5s;
 }
@@ -102,7 +102,7 @@ body {
   cursor: pointer;
 }
 .header .click-button button:hover {
-  color: rgb(248, 242, 242);
+  color: #f8f2f2;
   transform: scale(1.1);
   transition: 0.5s;
   border: 1px solid black;
@@ -112,7 +112,7 @@ body {
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: rgb(246, 218, 231);
+  background-color: #f6dae7;
   top: 0%;
   left: 0%;
   transition: 0.5s;
@@ -123,7 +123,7 @@ body {
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: rgb(250, 249, 249);
+  background-color: #faf9f9;
   top: 0%;
   right: 0%;
   opacity: 0.4;
@@ -157,24 +157,6 @@ body {
   width: 100%;
   height: 840px;
 }
-.header .list-slide .slick-prev::before {
-  font-size: 3.5rem;
-}
-.header .list-slide .slick-prev {
-  position: absolute;
-  z-index: 1;
-  left: 0.7%;
-  padding: 0px;
-}
-.header .list-slide .slick-next::before {
-  font-size: 3.5rem;
-}
-.header .list-slide .slick-next {
-  position: absolute;
-  z-index: 1;
-  right: 3.5%;
-  padding: 0px;
-}
 .header .list-slide .slick-dots {
   bottom: 1%;
   padding: 0%;
@@ -186,7 +168,7 @@ body {
 }
 .header .list-slide .slick-dots li button::before {
   font-size: 2rem;
-  color: rgb(20, 20, 20);
+  color: #141414;
 }
 
 .slogan {
@@ -238,7 +220,7 @@ body {
   top: 25%;
   left: 25%;
   font-size: 1.4rem;
-  color: rgb(20, 20, 20);
+  color: #141414;
   font-family: "Barlow Condensed", sans-serif;
   background-color: rgba(248, 233, 242, 0.7);
   border: none;
@@ -306,7 +288,7 @@ body {
   background-color: rgba(8, 8, 8, 0.206);
   border: 0.2px solid rgba(139, 132, 132, 0.51);
   font-family: "Barlow Condensed", sans-serif;
-  color: rgb(20, 20, 20);
+  color: #141414;
   font-weight: 400;
   font-size: larger;
 }
@@ -401,7 +383,7 @@ body {
 .products .list-products .show-wedding-dress .list-wedding-dress .dress .price p {
   text-align: center;
   font-size: larger;
-  color: rgb(83, 81, 81);
+  color: #535151;
   height: 100%;
   width: 100%;
 }
@@ -423,24 +405,80 @@ body {
   visibility: visible;
 }
 
-.search {
-  background-image: linear-gradient(rgba(248, 228, 228, 0.2), rgba(219, 205, 213, 0.4)), url("../img/s1.jpg");
-  height: 150px;
+.album {
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
+  padding: 0%;
   position: relative;
 }
-.search .icon-search {
-  width: auto;
+.album .content-album {
+  padding: 0%;
+}
+.album .content-album h1 {
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+}
+.album .list-album {
+  width: 100%;
   height: auto;
+  padding: 0%;
+  position: relative;
+}
+.album .list-album .img-album {
+  width: 100%;
+  padding: 0%;
+}
+.album .list-album .img-album img {
+  width: 100%;
+  height: 500px;
+  padding: 0%;
+}
+.album .slick-list {
+  width: 100%;
+  padding: 0%;
+}
+.album .slick-prev::before {
+  font-size: 3.5rem;
+  color: rebeccapurple;
+}
+.album .slick-prev {
+  z-index: 1;
   position: absolute;
 }
-.search .icon-search #search-service-price {
-  width: 30%;
-  height: 40%;
-  top: 30%;
-  left: 35%;
+.album .slick-next::before {
+  font-size: 3.5rem;
+  color: rebeccapurple;
+}
+.album .slick-next {
+  z-index: 1;
+  position: absolute;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  padding: 0%;
+  margin: 0%;
+  position: relative;
+}
+footer .img-footer {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  opacity: 90%;
+}
+footer .img-footer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row {
+  margin: 0%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -528,7 +566,7 @@ body {
   }
   .header .list-slide .slick-dots li button::before {
     font-size: 1rem;
-    color: rgb(253, 253, 253);
+    color: #fdfdfd;
   }
 
   .slogan h1 {
@@ -549,7 +587,7 @@ body {
   }
   .service .show-images .demo-img-first button {
     font-size: 0.6rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
     background-color: rgba(248, 233, 242, 0.7);
     border: none;
@@ -571,7 +609,7 @@ body {
   }
   .products .banner-order p {
     font-size: 0.6rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
   }
   .products .banner-order button {
@@ -651,7 +689,7 @@ body {
   }
   .service .show-images .demo-img-first button {
     font-size: 0.6rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
     background-color: rgba(248, 233, 242, 0.7);
     border: none;
@@ -673,7 +711,7 @@ body {
   }
   .products .banner-order p {
     font-size: 0.7rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
   }
   .products .banner-order button {
@@ -742,7 +780,7 @@ body {
   }
   .service .show-images .demo-img-first button {
     font-size: 0.9rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
     background-color: rgba(248, 233, 242, 0.7);
     border: none;
@@ -764,7 +802,7 @@ body {
   }
   .products .banner-order p {
     font-size: 1.2rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
   }
   .products .banner-order button {
@@ -850,7 +888,7 @@ body {
   }
   .service .show-images .demo-img-first button {
     font-size: 1.1rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
     background-color: rgba(248, 233, 242, 0.7);
     border: none;
@@ -872,7 +910,7 @@ body {
   }
   .products .banner-order p {
     font-size: 1.5rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
   }
   .products .banner-order button {
@@ -923,7 +961,7 @@ body {
   }
   .service .show-images .demo-img-first button {
     font-size: 2rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
     background-color: rgba(248, 233, 242, 0.7);
     border: none;
@@ -945,7 +983,7 @@ body {
   }
   .products .banner-order p {
     font-size: 2.5rem;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-family: "Barlow Condensed", sans-serif;
   }
   .products .banner-order button {
@@ -963,7 +1001,7 @@ body {
   }
   .products .list-products .show-wedding-dress .slick-dots li button::before {
     font-size: 2rem;
-    color: rgb(92, 89, 89);
+    color: #5c5959;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -975,7 +1013,7 @@ body {
   }
   .products .slick-dots li button::before {
     font-size: 1rem;
-    color: rgb(92, 89, 89);
+    color: #5c5959;
   }
 }
 
