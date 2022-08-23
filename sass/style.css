@@ -405,55 +405,61 @@ body {
   visibility: visible;
 }
 
-.album {
+.albums .album {
   width: 100%;
   height: auto;
   padding: 0%;
   position: relative;
 }
-.album .content-album {
+.albums .album .content-album {
   padding: 0%;
 }
-.album .content-album h1 {
+.albums .album .content-album h1 {
   font-size: 3.5rem;
   width: 100%;
   text-align: center;
   font-family: "Great Vibes", cursive;
 }
-.album .list-album {
+.albums .album .list-album {
   width: 100%;
   height: auto;
   padding: 0%;
-  position: relative;
 }
-.album .list-album .img-album {
+.albums .album .list-album .img-album {
+  width: 25%;
+  height: 330px;
+  padding: 0%;
+  margin: 0%;
+  float: left;
+}
+.albums .album .list-album .img-album img {
   width: 100%;
+  height: 100%;
+  margin: 0%;
   padding: 0%;
 }
-.album .list-album .img-album img {
+.albums .album .slick-list {
   width: 100%;
-  height: 500px;
-  padding: 0%;
 }
-.album .slick-list {
+.albums .album .slick-list .slick-track::before {
   width: 100%;
-  padding: 0%;
 }
-.album .slick-prev::before {
+.albums .album .slick-list .slick-track .slick-slide {
+  margin: 0%;
+}
+.albums .album .slick-prev::before {
   font-size: 3.5rem;
-  color: rebeccapurple;
+  display: none;
 }
-.album .slick-prev {
+.albums .album .slick-prev {
   z-index: 1;
-  position: absolute;
 }
-.album .slick-next::before {
+.albums .album .slick-next::before {
   font-size: 3.5rem;
-  color: rebeccapurple;
+  display: none;
 }
-.album .slick-next {
+.albums .album .slick-next {
   z-index: 1;
-  position: absolute;
 }
 
 footer {
@@ -479,6 +485,7 @@ footer .img-footer img {
 
 .row {
   margin: 0%;
+  padding: 0%;
 }
 
 @media only screen and (max-width: 600px) {

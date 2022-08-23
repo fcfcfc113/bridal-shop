@@ -441,59 +441,71 @@ padding: 0px;
         
     }
 }
-.album{
-width: 100%;
-height: auto;
-padding: 0%;
-position: relative;
-.content-album{
-        padding: 0%;
-        h1{
-            font-size: $font-size-big-title;
-            width: 100%;
-            text-align: center;
-            font-family: $font_logo;
-        }
-    } 
-    .list-album{
-            width: 100%;
-            height: auto;
+.albums{
+   .album{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    position: relative;
+    .content-album{
             padding: 0%;
-            position: relative;
-        .img-album{
-            width: 100%;
-            padding: 0%;
-            img{
+            h1{
+                font-size: $font-size-big-title;
                 width: 100%;
-                height: 500px;
+                text-align: center;
+                font-family: $font_logo;
+            }
+        } 
+        .list-album{
+                width: 100%;
+                height: auto;
                 padding: 0%;
+            .img-album{
+                width: 25%;
+                height: 330px;
+                padding: 0%;    
+                margin: 0%; 
+                float: left;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0%;
+                    padding: 0%;
+                }
             }
         }
-    }
-    .slick-list{
-        width: 100%;
-        padding: 0%;
-        
-    }
-      .slick-prev::before{
-            font-size: $font-size-big-title;
-            color: rebeccapurple;
-        }
-        .slick-prev{
-            z-index: 1;
-            position: absolute;     
-        }
-        .slick-next::before{
-            font-size: $font-size-big-title;
-            color: rebeccapurple;
+        .slick-list{
+            width: 100%;
+            .slick-track::before{
+                width: 100%;
+            }
+            .slick-track{ 
+                .slick-slide{
+                    margin: 0%;
+                }
+            }
             
         }
-        .slick-next{
-            z-index: 1;
-            position: absolute;
+            .slick-prev::before{
+                font-size: $font-size-big-title;
+                display: none;
+            }
+            .slick-prev{
+                z-index: 1;
+            }
+            .slick-next::before{
+                font-size: $font-size-big-title;
+                display: none;
+            }
+            .slick-next{
+                z-index: 1;
 
-        }
+            }
+    } 
 }
+
+
 footer{
     width: 100%;
     height: 400px;
@@ -518,6 +530,7 @@ footer{
 
 .row{
     margin: 0%;
+    padding: 0%;
 }
 
 @media only screen and (max-width: 600px) {

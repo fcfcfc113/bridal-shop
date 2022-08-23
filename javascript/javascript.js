@@ -22,9 +22,9 @@ cssEase: 'linear',
 slidesToShow: 1,
 slidesToScroll: 1,
 });
-$('.album .list-album').slick({
-slidesToShow: 3,
-});
+
+
+
 $(document).ready(function(){  
   $('.header .links #menuhide').on('click', function () {  
     $(".header .links #menushow").css("display","block");
@@ -88,9 +88,16 @@ GetButton.forEach(Button => {
 });
 
 
-$(document).ready(function(){
-const previous = document.createAttribute("div");
-const getAlbum = $(".album");
-getAlbum.appendChild(previous);
 
-});
+
+
+let buttonNext = document.getElementById("icon1");
+let buttonPrev = document.getElementById("icon2");
+
+let buttonNextPlugin = document.getElementsByClassName("slick-prev");
+buttonNext.addEventListener("click",function(){
+$(".slick-next").trigger("click");
+})
+buttonPrev.addEventListener("click",function(){
+  $(".slick-prev").trigger("click");
+})
