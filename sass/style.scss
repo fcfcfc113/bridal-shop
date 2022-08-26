@@ -442,6 +442,18 @@ padding: 0px;
     }
 }
 .albums{
+    padding:0%;
+    width: 84%;
+    height: auto;
+    h2{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: $font-size-big-title;
+        text-align: center;
+        color:rgba(19, 17, 15, 0.575) ;
+        font-family: $font_logo;
+    }
    .album{
     width: 100%;
     height: auto;
@@ -462,7 +474,7 @@ padding: 0px;
                 padding: 0%;
             .img-album{
                 width: 25%;
-                height: 330px;
+                height: $small-height-img;
                 padding: 0%;    
                 margin: 0%; 
                 float: left;
@@ -472,6 +484,7 @@ padding: 0px;
                     height: 100%;
                     margin: 0%;
                     padding: 0%;
+                    object-fit: cover;
                 }
             }
         }
